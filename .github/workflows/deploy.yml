@@ -33,6 +33,10 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: vue-project
+        env:
+          VITE_GOOGLE_MAPS_KEY: AIzaSyBE7mmsYZPxvtMOzenx5hvBWi6W_j5q0aw
+          VITE_SUPABASE_URL: https://oixtemuwclwrjxkdkcyb.supabase.co
+          VITE_SUPABASE_ANON_KEY: sb_publishable_8rfsixsleXoYjWZL4z6SMQ_zDWAI0OQ
 
       - uses: actions/configure-pages@v5
 
